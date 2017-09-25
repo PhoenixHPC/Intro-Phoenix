@@ -3,7 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>University of Adelaide, Introduction to Phoenix for Bioinformaticians Training Handouts</title>
+    <title>University of Adelaide, Introduction to Phoenix for Bioinformaticians Training
+Handouts</title>
 
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/github-light.css">
@@ -17,23 +18,30 @@
       <header>
         <h1>Introduction to Phoenix</h1>
         <p>This workshop is developed by Phoenix Team @ University of Adelaide. <br>
-        Phoenix team acknolodges the tremendous contribution by Bioinformatics Hub @ University of Adeladie in developing this curriculum. <br>
-        Phoenix team also thanks Bioplatforms Australia (BPA), CSIRO Bioinformatics Core and the EBI for providing handout templates.
+        Introduction to Phoenix is a part of HPC curriculum developed and delivered by the Phoenix
+team @ The University of Adelaide. <br>
+        Phoenix team thanks the coordination and supports offered by BioHub @ UofA in delivering this course.  
         </p>
-        <p class="view"><a href="https://github.com/PhoenixHPC/Intro-Bash">View the Project Repo on GitHub<small>PhoenixHPC/Intro-Bash</small></a></p>
+        <p class="view"><a href="https://github.com/PhoenixHPC/Intro-Bash">View the Project Repo on
+GitHub<small>PhoenixHPC/Intro-Bash</small></a></p>
 
 
         <ul>
-          <li><a href="pdfs-latest/trainee_handout.pdf">Download <strong>Trainee PDF</strong></a></li>
-          <li><a href="pdfs-latest/trainer_handout.pdf">Download <strong>Trainer PDF</strong></a></li>
-          <li><a href="https://github.com/PhoenixHPC/Intro-Bash">View On <strong>GitHub</strong></a></li>
+          <li><a href="pdfs-latest/trainee_handout.pdf">Download <strong>Trainee
+PDF</strong></a></li>
+          <li><a href="pdfs-latest/trainer_handout.pdf">Download <strong>Trainer
+PDF</strong></a></li>
+          <li><a href="https://github.com/PhoenixHPC/Intro-Bash">View On
+<strong>GitHub</strong></a></li>
         </ul>
       </header>
       <section>
-        <p><a href="https://travis-ci.org/PhoenixHPC/Intro-Bash"><img src="https://travis-ci.org/PhoenixHPC/Intro-Bash.svg?branch=master" alt="Build Status"></a></p>
+        <p><a href="https://travis-ci.org/PhoenixHPC/Intro-Bash"><img
+src="https://travis-ci.org/PhoenixHPC/Intro-Bash.svg?branch=master" alt="Build Status"></a></p>
 
 <h1>
-<a id="table-of-contents" class="anchor" href="#table-of-contents" aria-hidden="true"><span class="octicon octicon-link"></span></a>Table of Contents</h1>
+<a id="table-of-contents" class="anchor" href="#table-of-contents" aria-hidden="true"><span
+class="octicon octicon-link"></span></a>Table of Contents</h1>
 
 
 
@@ -48,28 +56,37 @@
 
 
 <h1>
-<a id="homepage-and-pdfs" class="anchor" href="#homepage-and-pdfs" aria-hidden="true"><span class="octicon octicon-link"></span></a>Homepage and PDFs</h1>
+<a id="homepage-and-pdfs" class="anchor" href="#homepage-and-pdfs" aria-hidden="true"><span
+class="octicon octicon-link"></span></a>Homepage and PDFs</h1>
 
 <p>You can access the source code and up-to-date PDFs from this project at
 <a href="https://github.com/PhoenixHPC/Intro-Bash">https://github.com/PhoenixHPC/Intro-Bash</a></p>
 
 <h1>
-<a id="workshop-feedback" class="anchor" href="#workshop-feedback" aria-hidden="true"><span class="octicon octicon-link"></span></a>Workshop Feedback</h1>
-<p> Phoenix Team @ UofA will be very appreciated if you can provide feedback on this workshop by fill in this survey at <a href="https://goo.gl/gqwQ1e">goo.gl/gqwQ1e</a></p>
+<a id="workshop-feedback" class="anchor" href="#workshop-feedback" aria-hidden="true"><span
+class="octicon octicon-link"></span></a>Workshop Feedback</h1>
+<p> Phoenix Team @ UofA will be very appreciated if you can provide feedback on this workshop by
+fill in this survey at <a href="https://goo.gl/gqwQ1e">goo.gl/gqwQ1e</a></p>
 
 
 <h1>
-<a id="purpose" class="anchor" href="#style" aria-hidden="true"><span class="octicon octicon-link"></span></a>About Hand-out Style</h1>
+<a id="purpose" class="anchor" href="#style" aria-hidden="true"><span class="octicon
+octicon-link"></span></a>About Hand-out Style</h1>
 
 <p>This repository contains style files that can be used by LaTeX to generate
 consistently styled handout documents for use in hands-on training workshops.</p>
 
-<p>If you are interested, full details of the templates used for this workshop can be find in style repository at:
-<a href="http://BPA-CSIRO-Workshops.github.io/handout-template/">http://BPA-CSIRO-Workshops.github.io/handout-template/</a></p>
+<p>If you are interested, full details of the templates used for this workshop can be find in style
+repository at:
+<a
+href="http://BPA-CSIRO-Workshops.github.io/handout-template/">http://BPA-CSIRO-Workshops.github.io/
+handout-template/</a></p>
 
 <!--- This section is deemed no longer relavent for Phoenix Training
 <h1>
-<a id="building-pdfs-from-latex-source" class="anchor" href="#building-pdfs-from-latex-source" aria-hidden="true"><span class="octicon octicon-link"></span></a>Building PDFs from LaTeX Source</h1>
+<a id="building-pdfs-from-latex-source" class="anchor" href="#building-pdfs-from-latex-source"
+aria-hidden="true"><span class="octicon octicon-link"></span></a>Building PDFs from LaTeX
+Source</h1>
 
 <p>First you need to install texlive and a bunch of LaTeX packages. To make this
 easy we have provided a script to do this:</p>
@@ -81,7 +98,8 @@ sudo ./texlive_install.sh
 <p>Secondly, you need to add the location of the texlive binary's to your PATH. If
 you installed texlive using the supplied script, the following should work:</p>
 
-<div class="highlight highlight-source-shell"><pre><span class="pl-k">export</span> PATH=/usr/local/texlive/2013/bin/x86_64-linux:<span class="pl-smi">$PATH</span></pre></div>
+<div class="highlight highlight-source-shell"><pre><span class="pl-k">export</span>
+PATH=/usr/local/texlive/2013/bin/x86_64-linux:<span class="pl-smi">$PATH</span></pre></div>
 
 <p>Now you're ready to build the PDFs using the supplied Makefile:</p>
 
@@ -89,7 +107,8 @@ you installed texlive using the supplied script, the following should work:</p>
 --->
 
 <h1>
-<a id="credits" class="anchor" href="#credits" aria-hidden="true"><span class="octicon octicon-link"></span></a>Credits</h1>
+<a id="credits" class="anchor" href="#credits" aria-hidden="true"><span class="octicon
+octicon-link"></span></a>Credits</h1>
 
 <p>This style was originally designed for the Next Generation Sequencing (NGS)
 hands-on workshop developed by Bioplatforms Australia (BPA), CSIRO
@@ -97,23 +116,30 @@ Bioinformatics Core and the EBI. It was crafted predominantly by Dr. Nathan S.
 Watson-Haigh.</p>
 
 <h1>
-<a id="license" class="anchor" href="#license" aria-hidden="true"><span class="octicon octicon-link"></span></a>License</h1>
+<a id="license" class="anchor" href="#license" aria-hidden="true"><span class="octicon
+octicon-link"></span></a>License</h1>
 
 <p>The contents of this repository are released under the Creative Commons
 Attribution 3.0 Unported License. For a summary of what this means,
 please see:
-<a href="http://creativecommons.org/licenses/by/3.0/deed.en_GB">http://creativecommons.org/licenses/by/3.0/deed.en_GB</a></p>
+<a
+href="http://creativecommons.org/licenses/by/3.0/deed.en_GB">http://creativecommons.org/licenses/by/
+3.0/deed.en_GB</a></p>
       </section>
       <footer>
-        <p>This project is maintained by <a href="https://github.com/PhoenixHPC">Phoenix Team @ University of Adelaide</a></p>
-        <p><small>Hosted on GitHub Pages &mdash; Theme adopted from <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+        <p>This project is maintained by <a href="https://github.com/PhoenixHPC">Phoenix Team @
+University of Adelaide</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme adopted from <a
+href="https://github.com/orderedlist">orderedlist</a></small></p>
       </footer>
     </div>
 
     <script src="javascripts/scale.fix.js"></script>
           <script type="text/javascript">
-            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." :
+"http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js'
+type='text/javascript'%3E%3C/script%3E"));
           </script>
 
           <script type="text/javascript">
